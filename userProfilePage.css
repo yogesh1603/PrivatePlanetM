@@ -1,0 +1,93 @@
+body {
+  background-image: url(../images/Home-background-cover2.jpg);
+  background-size: cover;
+}
+
+.profile-pic-div {
+  height: 150px;
+  width: 150px;
+  position: relative;
+  top: 15%;
+  left: 90px;
+  margin-bottom: 25px;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  overflow: hidden;
+  border: 1px solid grey;
+}
+
+#photo {
+  height: 100%;
+  width: 100%;
+}
+
+#file {
+  display: none;
+}
+#but_upload {
+  margin-left: 30px;
+  margin-top: 6px;
+}
+
+#uploadBtn {
+  height: 40px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 40%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  text-align: center;
+  background: rgba(0, 0, 0, 0.7);
+  color: wheat;
+  line-height: 30px;
+  font-family: sans-serif;
+  font-size: 15px;
+  cursor: pointer;
+  display: none;
+}
+
+h1 {
+  color: burlywood;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-bottom: 15px;
+  text-align: center;
+  color: white;
+}
+
+.btn {
+  top: 60px;
+}
+h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+
+.card-img-top {
+  height: 25em;
+}
+.navbar {
+  font-weight: 700;
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
+  background: rgba(0, 0, 0, 0.6) !important;
+}
+
+.navbar-brand {
+  height: 2rem;
+}
+
+.navbar-nav li {
+  padding-right: 0.7rem;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: white;
+  padding-top: 0.8rem;
+}
+
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: tomato;
+}

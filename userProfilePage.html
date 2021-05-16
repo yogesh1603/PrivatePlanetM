@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UserProfile</title>
+
+        <link rel="stylesheet" href="../css/userProfilePage.css" />
+		<link rel="stylesheet" href="../css/music-library.css">
+		<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+		<link rel="stylesheet" href="../bootstrap_p/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="/css/app.css" />
+  		<link rel="stylesheet" href="/css/sideicon.css">
+
+  </head>
+  <body>
+    
+
+    <div class="vertical-nav bg-white" id="sidebar">
+        
+        <input type="file" id="fileimg"><label for="fileimg" id="uploadbtn">choose photo</label>
+        <input type="button" class="button" value="Upload" id="but_upload" onclick="upload()">
+        <div class="profile-pic-div"><img src="" onerror="this.src='../images/userImage.jpg'" id="photo" /></div>
+    
+        <div class="py-4 px-3 mb-4 bg-light">
+          <div class="media d-flex align-items-center">
+            <div class="media-body">
+              <a href=""></a><h4 class="m-0" id ="para"></h4>
+              <a href="userProfilePage.html"><p class="font-weight-normal text-muted mb-0" id = "user" style="color: white;"></p></a>
+            </div>
+          </div>
+        </div>
+      
+        <ul class="nav flex-column bg-white mb-0">
+          <li class = "nav-item">
+          <div id="searchWrapper">
+              <input
+                  type="text"
+                  name="searchBar"
+                  id="searchBar"
+                  placeholder="search for a Music"
+              />
+          </div>
+        </div>
+      <div class="page-content p-5" id="content">
+        <button id="sidebarCollapse" type="button" class="btn btn-light bg-white rounded-pill shadow-sm px-4 mb-4"><i class="fa fa-bars mr-2"></i><small class="text-uppercase font-weight-bold">Toggle</small></button>
+      
+<nav class="navbar ">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="index.html">PlanetM</a>
+    </div>
+      </li>
+      <!-- <li><a href="#">Recently Played Song</a></li> -->
+      <li id="albumPage" type="none">
+	    <a href="./Album.html">Last Added</a></li>
+      <li id="artistPage" type="none">
+        <a href="./Album.html" type="none">Last Played</a></li>
+      <li id="favorites" type="none">
+        <a href="./favorites">Favorites</a></li>
+        <li class="nav-item" type="none">
+            <a class="nav-link" onclick="logout()">Logout</a>
+        </li>
+      
+    </ul>
+  </div>
+</nav>
+
+    <script src="../js/app.js"></script>
+
+    <script src="../js/userProfilePage.js"></script>
+  </body>
+</html>
